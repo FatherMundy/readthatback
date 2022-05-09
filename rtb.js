@@ -337,3 +337,5 @@ $('.uni.lesson').click(function(){
   $('#audio')[0].load();
   $('#audio')[0].oncanplaythrough =  $('#audio')[0].play();
 })
+
+console.log('heelo')
