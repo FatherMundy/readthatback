@@ -92,7 +92,7 @@ function showNotification(text,type){
 }
 
 function hideNotification(){
-  
+  $('.notification').css('opacity','0%')
 }
 
 function autosave(){
@@ -112,8 +112,12 @@ function autosave(){
     showNotification("Autosaved",1)
   },
   2000);
-
+  delay(function (e) {
+    hideNotification()
+  },
+  4000)
 }
+
 
 loadPage()
 
