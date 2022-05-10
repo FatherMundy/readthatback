@@ -200,6 +200,7 @@ $('.draft').on('click','.draft-text',pickDraft)
 $('.draft').on('click','.close-draft',deleteDraft)
 
 $('.uni').click(function(){
+  console.log('click uni')
   if($(this).attr('data-status')==0){
     console.log("status zero")
     $(this).find('.icon').attr('src','https://uploads-ssl.webflow.com/62290cff51755e73b77cfb7d/623bf13cd157aa43b235f4f4_close%20purp.svg')
