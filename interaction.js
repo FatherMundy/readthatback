@@ -109,7 +109,7 @@ function autosave(){
     } else {
       current.find('.draft-text').html("Draft "+index)
     }
-    showNotification("Autosaved",1)
+    showNotification("Autosave Complete",1)
   },
   2000);
   delay(function (e) {
@@ -158,7 +158,7 @@ $('#text-input').keyup(function(){
 })
 
 //autosave
-$('#text-input').keyup(autosave());
+$('#text-input').keyup(autosave())
 
 $('#canvas').click(function(){
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
