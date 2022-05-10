@@ -111,12 +111,7 @@ function autosave(){
       current.find('.draft-text').html("Draft "+index)
     }
     showNotification("Autosave Complete",1)
-  },
-  2000);
-  delay(function (e) {
-    hideNotification()
-  },
-  4000)
+  }
 }
 
 
