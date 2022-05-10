@@ -96,6 +96,7 @@ function hideNotification(){
 }
 
 function autosave(){
+  console.log('start autosave')
   delay(function (e) {
     var current = $('.draft-card.pick')
     var text = encodeURIComponent(this.value)
@@ -224,3 +225,5 @@ $('.uni.lesson').click(function(){
   $('#audio')[0].load();
   $('#audio')[0].oncanplaythrough =  $('#audio')[0].play();
 })
+
+
