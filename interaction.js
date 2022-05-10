@@ -201,9 +201,11 @@ $('.draft').on('click','.close-draft',deleteDraft)
 
 $('.uni').click(function(){
   if($(this).attr('data-status')==0){
+    console.log("status zero")
     $(this).find('.icon').attr('src','https://uploads-ssl.webflow.com/62290cff51755e73b77cfb7d/623bf13cd157aa43b235f4f4_close%20purp.svg')
     $(this).attr('data-status',1)
   } else {
+    console.log("status one")
     $(this).find('.icon').attr('src','https://uploads-ssl.webflow.com/62290cff51755e73b77cfb7d/623bf13c7f6bae6d22fa56d7_school.svg')
     $(this).attr('data-status',0)
   }
